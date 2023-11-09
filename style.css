@@ -307,11 +307,13 @@ svg.arrow-icon{
 
 .client-logos-section{
     padding-bottom: 5%;
+    overflow: hidden;
 }
 
-.client-logos-container{
-    width: 1492px;
-    margin: auto;
+.logos-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .client-logos-row{
@@ -372,6 +374,8 @@ svg.arrow-icon{
 .client-logos-section a{
     text-decoration: none;
 }
+
+
 
 
 
