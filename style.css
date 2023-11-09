@@ -303,6 +303,77 @@ svg.arrow-icon{
 
 
 
+/* Styles for Client Section */
+
+.client-logos-section{
+    padding-bottom: 5%;
+}
+
+.client-logos-container{
+    width: 1492px;
+    margin: auto;
+}
+
+.client-logos-row{
+    display: flex;
+    gap: 100px;
+    margin: 20px 0;
+}
+.client-logo-large{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #DAE0E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.client-logo-medium{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 1px solid #DAE0E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.client-logo-small{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid #DAE0E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.client-logo-large img{
+    width: 72px;
+    height: 72px;
+}
+.client-logo-medium img{
+    width: 56px;
+    height: 56px;
+}
+.client-logo-small img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.show-more-link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.client-logos-section a{
+    text-decoration: none;
+}
+
+
 
 /* Media query for screens 1380px wide or less */
 @media (max-width: 1380px) {
