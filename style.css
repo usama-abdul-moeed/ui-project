@@ -130,6 +130,11 @@
 
 /* Styles for Features Section */
 
+.features-section{
+    padding: 0 5%;
+}
+
+
 .features-section h1{
     font-family: 'Inter', sans-serif;
 }
@@ -187,6 +192,10 @@ svg.arrow-icon{
 
 /* Styles for product block */
 
+.product-block{
+    padding: 5%;
+}
+
 .product-block h1{
     font-family: 'Inter', sans-serif;
 }
@@ -226,10 +235,71 @@ svg.arrow-icon{
 }
 
 
+/* Styles for Stats Section */
 
+.stats-section{
+    padding: 5%;
+    background-color: #2B63D9;
+}
 
+.stats-container{
+    padding: 0 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    /* background-color: aquamarine; */
+}
 
+.stats-section h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+}
 
+.stats-section p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B1CCFB;
+    line-height: 24px;
+}
+.stats-section h6{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B1CCFB;
+    line-height: 32px;
+}
+
+.stats-section svg{
+    fill: #F9F9F9;
+    width: 32px;
+    height: 32px;
+}
+
+.checked-line{
+    display: flex;
+}
+
+.stats-section button{
+    font-weight: 600;
+    padding: 15px;
+    background-color: #437EF7;
+}
+
+.stats-section button svg{
+    fill: #F9F9F9;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+}
+
+.stats-content{
+    max-width: 576px;
+    color: #FFFFFF;
+}
 
 
 
@@ -327,12 +397,20 @@ svg.arrow-icon{
     .product-box{
         width: 100%;
     }
+    .stats-container{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Media query for screens 768px wide or more */
 @media (min-width: 769px) {
     .product-pic-small-screen{
         display: none;
+    }
+    .product-pic-large-screen{
+        display: flex;
+        justify-content: flex-end;
     }
     
 }
