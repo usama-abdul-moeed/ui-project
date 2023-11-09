@@ -376,6 +376,140 @@ svg.arrow-icon{
 }
 
 
+/* Styles for pricing section */
+
+.pricing-section{
+    padding-bottom: 5%;
+}
+
+
+.price-card{
+    border: 1px solid #EAEBF0;
+    padding: 32px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.tile{
+    padding: 2px 8px;
+    background-color: #5390F8;
+    border-radius: 5px;
+}
+.tile p{
+    margin: 0;
+    color: #FFFFFF;
+    font-family: "Inter" sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.price h1{
+    font-family: "Inter" sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+    margin: 0;
+}
+
+.price h6{
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    color: #5F6D7E;
+}
+
+.package{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.price-card hr{
+    border: 1px solid #EAEBF0;
+    width: 100%;
+}
+
+.perks{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-start;
+    gap: 8px;
+}
+
+.perk-description{
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #272D37;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.perk-description p{
+    margin: 0;
+}
+
+.perk-description svg.tick{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    fill: #437EF7;
+}
+
+.perk-description svg.cross{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    fill: #DAE0E6;
+}
+
+.card-button{
+    width: 100%;
+}
+.card-button button{
+    width: 100%;
+    background-color: #437EF7;
+    padding: 12px 18px;
+    border: 1px solid #EAEBF0;
+    border-radius: 6px;
+    font-family: "Inter" sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.card-button svg{
+    background-color: transparent;
+    fill: #FFFFFF;
+    width: 20px;
+    height: 20px;
+}
+
+
 
 
 
