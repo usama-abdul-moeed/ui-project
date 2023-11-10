@@ -131,14 +131,12 @@
 /* Styles for Features Section */
 
 .features-section{
-    padding: 0 5%;
+    padding: 2.5% 5%;
 }
-
 
 .features-section h1{
     font-family: 'Inter', sans-serif;
 }
-
 
 .features-section svg{
     background-color: #F5FAFF;
@@ -193,7 +191,7 @@ svg.arrow-icon{
 /* Styles for product block */
 
 .product-block{
-    padding: 5%;
+    padding: 2.5% 5%;
 }
 
 .product-block h1{
@@ -238,7 +236,7 @@ svg.arrow-icon{
 /* Styles for Stats Section */
 
 .stats-section{
-    padding: 5%;
+    padding: 2.5% 5%;
     background-color: #2B63D9;
 }
 
@@ -306,7 +304,7 @@ svg.arrow-icon{
 /* Styles for Client Section */
 
 .client-logos-section{
-    padding-bottom: 5%;
+    padding: 2.5% 0;
     overflow: hidden;
 }
 
@@ -379,7 +377,7 @@ svg.arrow-icon{
 /* Styles for pricing section */
 
 .pricing-section{
-    padding-bottom: 5%;
+    padding: 2.5% 0;
 }
 
 
@@ -507,6 +505,40 @@ svg.arrow-icon{
     fill: #FFFFFF;
     width: 20px;
     height: 20px;
+}
+
+
+/* Styles for Blog Section */
+
+.blog-section{
+    padding: 2.5% 5%;
+}
+
+.blog-container h1{
+    font-family: "Inter" sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #272D37;
+}
+
+.blog-container h5{
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #5F6D7E;
+}
+
+.blog-container h6{
+    font-family: "Inter" sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #5F6D7E;
+}
+.secondary-blog{
+    padding: 0;
 }
 
 
