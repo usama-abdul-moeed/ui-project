@@ -1,21 +1,21 @@
 /* Styles for hero */
 .hero {
     position: relative;
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .hero-img {
     width: 100%;
     position: absolute;
     z-index: -1;
-    height: 80vh;
+    height: 100%;
 }
 .hero-shade {
     width: 100%;
     position: absolute;
     z-index: -1;
     opacity: 0.9;
-    height: 80vh;
+    height: 100%;
 }
 
 /* Styles for navbar present inside hero */
@@ -95,7 +95,7 @@
 
 .hero-content-box{
     width: 50%;
-    height: 50%;
+    /* height: 50%; */
 }
 
 .hero-content h1{
@@ -652,31 +652,9 @@ svg.arrow-icon{
     .hero-content-box{
         width: 100%;
     }
-    .hero-img {
-        height: 70vh;
-    }
-    .hero-shade {
-        height: 70vh;
-    }
-    .hero {
-        height: 70vh;
-    }
     
 }
 
-
-/* Media query for screens 575px wide or less */
-@media (max-width: 575px) {
-    .hero-img {
-        height: 90vh;
-    }
-    .hero-shade {
-        height: 90vh;
-    }
-    .hero {
-        height: 90vh;
-    }
-}
 
 /* Media query for screens 380px wide or less */
 @media (max-width: 380px) {
@@ -697,15 +675,6 @@ svg.arrow-icon{
         gap: 0px;
         margin: 0;
         padding: 0;
-    }
-    .hero-img {
-        height: 110vh;
-    }
-    .hero-shade {
-        height: 110vh;
-    }
-    .hero {
-        height: 110vh;
     }
 }
 
