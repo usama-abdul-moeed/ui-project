@@ -5,13 +5,13 @@
 }
 
 .hero-img {
-    width: 100vw;
+    width: 100%;
     position: absolute;
     z-index: -1;
     height: 80vh;
 }
 .hero-shade {
-    width: 100vw;
+    width: 100%;
     position: absolute;
     z-index: -1;
     opacity: 0.9;
@@ -542,8 +542,93 @@ svg.arrow-icon{
 }
 
 
+/* Styles for Newsletter Section */
+.newsletter-section{
+    padding: 5% 5%;
+    background-color: #2B63D9;
+}
+
+.newsletter-container h1{
+    font-family: "Inter" sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    color: #FFFFFF
+}
+
+.newsletter-container h6{
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #B1CCFB;
+}
+
+.newsletter-text{
+    margin: 0;
+}
+
+.newsletter-container input{
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px;
+}
+
+.newsletter-container button{
+    border: none;
+    border-radius: 6px;
+    background-color: #437EF7;
+    font-family: "Inter" sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 13px 18px;
+}
+
+/* Styles for footer */
+
+.footer{
+    padding: 2.5% 5%;
+    background-color: #151B28;
+}
+
+.footer h5{
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.footer h6{
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #A5ACBA
+}
+
+.footer-content{
+    gap: 64px;
+}
+
+.footer h4{
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #A5ACBA;
+    margin: 0;
+}
+
+.footer svg{
+    fill: #FFFFFF;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+}
 
 
+/* Media Queries */
 
 /* Media query for screens 1380px wide or less */
 @media (max-width: 1380px) {
@@ -578,6 +663,7 @@ svg.arrow-icon{
     }
     
 }
+
 
 /* Media query for screens 575px wide or less */
 @media (max-width: 575px) {
@@ -654,4 +740,12 @@ svg.arrow-icon{
         justify-content: flex-end;
     }
     
+}
+@media (min-width: 576px){
+    .newsletter-container input{
+        border-radius: 6px 0 0 6px;
+    }
+    .newsletter-container button{
+        border-radius: 0 6px 6px 0;
+    }
 }
