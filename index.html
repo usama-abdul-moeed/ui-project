@@ -3,8 +3,10 @@
   <!-- Head -->
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>UI Assignment</title>
+
+    <!-- Bootstrap CDN links -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,6 +19,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Google Font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,776 +27,992 @@
       rel="stylesheet"
     />
 
+    <!-- External CSS link -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <!-- Body -->
-  <body>
-    <!-- Hero Section -->
-    <div class="hero">
-      <!-- Hero Background Image (Shaded) -->
-      <img
-        class="hero-img"
-        src="images/hero background.jpg"
-        alt="Hero Background"
-      />
-      <img class="hero-shade" src="images/hero shade.jpg" alt="Hero Shade" />
-
-      <!-- Navbar placed on hero -->
-      <div class="navbar-container">
-        <nav class="navbar navbar-expand-md navbar-light bg-transparent">
-          <!-- Navbar left side - Logo and Links -->
-          <div class="container-fluid navbar-left-container">
-            <img
-              class="company-logo"
-              src="images/Company Logo.png"
-              alt="Comapny logo"
-            />
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon navbar-dark"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul
-                class="navbar-nav me-auto mb-2 mb-lg-0 navbar-link-buttons-container"
+  <div class="body-container">
+    <body>
+      <!-- Hero Section -->
+      <div class="hero">
+        <!-- Hero Background Image (Shaded) -->
+        <img
+          class="hero-img"
+          src="images/hero background.jpg"
+          alt="Hero Background"
+        />
+        <img class="hero-shade" src="images/hero shade.jpg" alt="Hero Shade" />
+  
+        <!-- Navbar placed on hero -->
+        <div class="navbar-container">
+          <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+            <!-- Navbar left side - Logo and Links -->
+            <div class="container-fluid navbar-left-container">
+              <img
+                class="company-logo"
+                src="images/Company Logo.png"
+                alt="Comapny logo"
+              />
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
               >
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Our Products</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="#" role="button"> Resources </a>
-                  <a
-                    class="dropdown-arrow"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Resources
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Resource 1</a></li>
-                    <li><a class="dropdown-item" href="#">Resource 2</a></li>
-                    <li><a class="dropdown-item" href="#">Resource 3</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contacts</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Navbar right side - Signup and Login buttons -->
-            <div class="d-flex navbar-right-container" role="search">
-              <button class="signup-button" type="submit">Sign up</button>
-              <button class="btn btn-primary login-button" type="submit">
-                Login
+                <span class="navbar-toggler-icon navbar-dark"></span>
               </button>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <!-- Hero Content -->
-      <div class="hero-content">
-        <div class="hero-content-box">
-          <div class="px-4 py-5 my-5 text-center">
-            <!-- Rating star box in hero -->
-            <div class="rating-box">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 576 512"
-              >
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <style>
-                  svg {
-                    fill: #ffae43;
-                  }
-                </style>
-                <path
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 576 512"
-              >
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <style>
-                  svg {
-                    fill: #ffae43;
-                  }
-                </style>
-                <path
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 576 512"
-              >
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <style>
-                  svg {
-                    fill: #ffae43;
-                  }
-                </style>
-                <path
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 576 512"
-              >
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <style>
-                  svg {
-                    fill: #ffae43;
-                  }
-                </style>
-                <path
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 576 512"
-              >
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <style>
-                  svg {
-                    fill: #ffae43;
-                  }
-                </style>
-                <path
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                />
-              </svg>
-            </div>
-
-            <!-- Text content in hero -->
-            <h1 class="display-5 fw-bold">
-              Your Supercharged Design Workflow.
-            </h1>
-            <div class="col-lg-12 mx-auto">
-              <p class="lead mb-4">
-                We've been told it is possible to revolutionize the payment
-                industry. We have not reinvented the wheel, we decided to build
-                upon it - successfully.
-              </p>
-
-              <!-- Buttons in hero -->
-              <div class="d-grid gap-4 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
-                  Get Started
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-secondary btn-lg px-4 contact-us"
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul
+                  class="navbar-nav me-auto mb-2 mb-lg-0 navbar-link-buttons-container"
                 >
-                  Contact Us
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Our Products</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button"> Resources </a>
+                    <a
+                      class="dropdown-arrow"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Resources
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Resource 1</a></li>
+                      <li><a class="dropdown-item" href="#">Resource 2</a></li>
+                      <li><a class="dropdown-item" href="#">Resource 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <!-- Navbar right side - Signup and Login buttons -->
+              <div class="d-flex navbar-right-container" role="search">
+                <button class="signup-button" type="submit">Sign up</button>
+                <button class="btn btn-primary login-button" type="submit">
+                  Login
                 </button>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
-      </div>
-    </div>
-
-    <!-- Features Section -->
-    <div class="features-section">
-      <!-- Text above features -->
-      <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-          <div class="col-lg-10 col-md-8 mx-auto">
-            <h1 class="fw-bold">Work Easier Today</h1>
-            <p class="lead text-body-secondary">
-              Leverage agile frameworks to provide a robust synopsis for high
-              level overviews. Iterative approaches to corporate strategy foster
-              collaborative thinking to further the overall value proposition.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Features Container -->
-      <div class="container-fluid">
-        <div class="row">
-          <!-- Work Easier Today -->
-          <div class="feature col-md-3 col-sm-6">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                fill="currentColor"
-                class="bi bi-currency-dollar"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-body-emphasis">Work Easier Today</h3>
-            <p>
-              Leverage the agile frameworks to provide a synopsis for the high
-              level overviews.
-            </p>
-            <a href="#">
-              Learn more
-              <svg
-                class="arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </a>
-          </div>
-
-          <!-- Our Channels -->
-          <div class="feature col-md-3 col-sm-6">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-hand-index-thumb-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716.075.09.141.175.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-body-emphasis">Our Channels</h3>
-            <p>
-              Organically grow the holistic world view of disruptive innovation
-              and amazing Concepts.
-            </p>
-            <a href="#">
-              Learn more
-              <svg
-                class="arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </a>
-          </div>
-
-          <!-- API Connects -->
-          <div class="feature col-md-3 col-sm-6">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-cloud-arrow-up-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-body-emphasis">API Connects</h3>
-            <p>
-              Bring to the table some win-win strategies to ensure the proactive
-              domination.
-            </p>
-            <a href="#">
-              Learn more
-              <svg
-                class="arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </a>
-          </div>
-
-          <!-- Messaging for all -->
-          <div class="feature col-md-3 col-sm-6">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chat-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-body-emphasis">Messaging for all</h3>
-            <p>
-              User generated content in thr real-time will have multiple
-              touchpoints for offshoring.
-            </p>
-            <a href="#">
-              Learn more
-              <svg
-                class="arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </a>
-          </div>
-
-          <!-- Accessibility -->
-          <div class="feature col-md-3 col-sm-6">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-box-arrow-in-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"
-                />
-                <path
-                  fill-rule="evenodd"
-                  d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-body-emphasis">Accessibility</h3>
-            <p>
-              Bring to the table some win-win strategies to ensure the proactive
-              domination.
-            </p>
-            <a href="#">
-              Learn more
-              <svg
-                class="arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </a>
-          </div>
-
-          <!-- Apps -->
-          <div class="feature col-md-3 col-sm-6">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-play-circle-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-body-emphasis">Apps</h3>
-            <p>
-              Leverage the agile frameworks to provide a synopsis for the high
-              level overviews.
-            </p>
-            <a href="#">
-              Learn more
-              <svg
-                class="arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </a>
-          </div>
-
-          <!-- Workflow builder -->
-          <div class="feature col-md-3 col-sm-6">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-stack"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"
-                />
-                <path
-                  d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-body-emphasis">Workflow builder</h3>
-            <p>
-              User generated content in the real-time will have multiple
-              touchpoints for offshoring.
-            </p>
-            <a href="#">
-              Learn more
-              <svg
-                class="arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </a>
-          </div>
-
-          <!-- Searching -->
-          <div class="feature col-md-3 col-sm-6">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-search"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-body-emphasis">Searching</h3>
-            <p>
-              Organically grow the holistic world view of disruptive innovation
-              and amazing Concepts.
-            </p>
-            <a href="#">
-              Learn more
-              <svg
-                class="arrow-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product Section -->
-    <div class="product-block">
-      <!-- Text above product -->
-      <section class="py-5 text-center container col-lg-8">
-        <div class="row py-lg-5">
-          <div class="col-lg-10 col-md-8 mx-auto">
-            <h1 class="fw-bold">Redefining Product Features</h1>
-            <p class="lead text-body-secondary text-center">
-              Keeping your eye on the ball while performing a deep dive on the
-              start-up mentality to derive convergence on cross-platform
-              integration.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div class="container-fluid product-content">
-        <div class="row pictures-container">
-          <!-- Small Screen Picture -->
-          <div class="col-12 product-pic-small-screen">
-            <img src="images/product style 1.jpg" alt="" class="img-fluid" />
-          </div>
-
-          <!-- Product Features -->
-          <div class="col-md-6 product-box">
-            <!-- Explore ideas together -->
-            <div class="feature col-10">
-              <div class="d-flex gap-3">
-                <div class="feature-icon d-inline-flex fs-2 mb-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-send-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-body-emphasis text-start">
-                    Explore ideas together
-                  </h3>
-                  <p class="text-start">
-                    Engage audience segments and finally create actionable
-                    insights. Amplify vertical integration.
-                  </p>
-                  <a href="#">
-                    Learn more
-                    <svg
-                      class="arrow-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-arrow-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                      />
-                    </svg>
-                  </a>
-                </div>
+  
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <div class="hero-content-box">
+            <div class="px-4 py-5 my-5 text-center">
+              <!-- Rating star box in hero -->
+              <div class="rating-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <style>
+                    svg {
+                      fill: #ffae43;
+                    }
+                  </style>
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <style>
+                    svg {
+                      fill: #ffae43;
+                    }
+                  </style>
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <style>
+                    svg {
+                      fill: #ffae43;
+                    }
+                  </style>
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <style>
+                    svg {
+                      fill: #ffae43;
+                    }
+                  </style>
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <style>
+                    svg {
+                      fill: #ffae43;
+                    }
+                  </style>
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
               </div>
-            </div>
-
-            <!-- Bring those ideas to life -->
-            <div class="feature col-10">
-              <div class="d-flex gap-3">
-                <div class="feature-icon d-inline-flex fs-2 mb-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-lightbulb-fill"
-                    viewBox="0 0 16 16"
+  
+              <!-- Text content in hero -->
+              <h1 class="display-5 fw-bold">
+                Your Supercharged Design Workflow.
+              </h1>
+              <div class="col-lg-12 mx-auto">
+                <p class="lead mb-4">
+                  We've been told it is possible to revolutionize the payment
+                  industry. We have not reinvented the wheel, we decided to build
+                  upon it - successfully.
+                </p>
+  
+                <!-- Buttons in hero -->
+                <div class="d-grid gap-4 d-sm-flex justify-content-sm-center">
+                  <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+                    Get Started
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary btn-lg px-4 contact-us"
                   >
-                    <path
-                      d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-body-emphasis text-start">
-                    Bring those ideas to life
-                  </h3>
-                  <p class="text-start">
-                    Engage audience segments and finally create actionable
-                    insights. Amplify vertical integration.
-                  </p>
-                  <a href="#">
-                    Learn more
-                    <svg
-                      class="arrow-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-arrow-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Ship better outcomes -->
-            <div class="feature col-10">
-              <div class="d-flex gap-3">
-                <div class="feature-icon d-inline-flex fs-2 mb-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-globe-asia-australia"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="m10.495 6.92 1.278-.619a.483.483 0 0 0 .126-.782c-.252-.244-.682-.139-.932.107-.23.226-.513.373-.816.53l-.102.054c-.338.178-.264.626.1.736a.476.476 0 0 0 .346-.027ZM7.741 9.808V9.78a.413.413 0 1 1 .783.183l-.22.443a.602.602 0 0 1-.12.167l-.193.185a.36.36 0 1 1-.5-.516l.112-.108a.453.453 0 0 0 .138-.326ZM5.672 12.5l.482.233A.386.386 0 1 0 6.32 12h-.416a.702.702 0 0 1-.419-.139l-.277-.206a.302.302 0 1 0-.298.52l.761.325Z"
-                    />
-                    <path
-                      d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1.612 10.867l.756-1.288a1 1 0 0 1 1.545-.225l1.074 1.005a.986.986 0 0 0 1.36-.011l.038-.037a.882.882 0 0 0 .26-.755c-.075-.548.37-1.033.92-1.099.728-.086 1.587-.324 1.728-.957.086-.386-.114-.83-.361-1.2-.207-.312 0-.8.374-.8.123 0 .24-.055.318-.15l.393-.474c.196-.237.491-.368.797-.403.554-.064 1.407-.277 1.583-.973.098-.391-.192-.634-.484-.88-.254-.212-.51-.426-.515-.741a6.998 6.998 0 0 1 3.425 7.692 1.015 1.015 0 0 0-.087-.063l-.316-.204a1 1 0 0 0-.977-.06l-.169.082a1 1 0 0 1-.741.051l-1.021-.329A1 1 0 0 0 11.205 9h-.165a1 1 0 0 0-.945.674l-.172.499a1 1 0 0 1-.404.514l-.802.518a1 1 0 0 0-.458.84v.455a1 1 0 0 0 1 1h.257a1 1 0 0 1 .542.16l.762.49a.998.998 0 0 0 .283.126 7.001 7.001 0 0 1-9.49-3.409Z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-body-emphasis text-start">
-                    Ship better outcomes
-                  </h3>
-                  <p class="text-start">
-                    Engage audience segments and finally create actionable
-                    insights. Amplify vertical integration.
-                  </p>
-                  <a href="#">
-                    Learn more
-                    <svg
-                      class="arrow-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-arrow-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                      />
-                    </svg>
-                  </a>
+                    Contact Us
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Large Screen Picture -->
-          <div class="col-6 product-pic-large-screen">
-            <img
-              src="images/product style 2.jpg"
-              alt=""
-              class="object-fit-fill img-fluid"
-            />
+        </div>
+      </div>
+  
+      <!-- Features Section -->
+      <div class="features-section">
+        <!-- Text above features -->
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-10 col-md-8 mx-auto">
+              <h1 class="fw-bold">Work Easier Today</h1>
+              <p class="lead text-body-secondary">
+                Leverage agile frameworks to provide a robust synopsis for high
+                level overviews. Iterative approaches to corporate strategy foster
+                collaborative thinking to further the overall value proposition.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Features Container -->
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Work Easier Today -->
+            <div class="feature col-md-3 col-sm-6">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-currency-dollar"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-body-emphasis">Work Easier Today</h3>
+              <p>
+                Leverage the agile frameworks to provide a synopsis for the high
+                level overviews.
+              </p>
+              <a href="#">
+                Learn more
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+  
+            <!-- Our Channels -->
+            <div class="feature col-md-3 col-sm-6">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-hand-index-thumb-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716.075.09.141.175.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-body-emphasis">Our Channels</h3>
+              <p>
+                Organically grow the holistic world view of disruptive innovation
+                and amazing Concepts.
+              </p>
+              <a href="#">
+                Learn more
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+  
+            <!-- API Connects -->
+            <div class="feature col-md-3 col-sm-6">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-cloud-arrow-up-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-body-emphasis">API Connects</h3>
+              <p>
+                Bring to the table some win-win strategies to ensure the proactive
+                domination.
+              </p>
+              <a href="#">
+                Learn more
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+  
+            <!-- Messaging for all -->
+            <div class="feature col-md-3 col-sm-6">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chat-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-body-emphasis">Messaging for all</h3>
+              <p>
+                User generated content in thr real-time will have multiple
+                touchpoints for offshoring.
+              </p>
+              <a href="#">
+                Learn more
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+  
+            <!-- Accessibility -->
+            <div class="feature col-md-3 col-sm-6">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-box-arrow-in-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-body-emphasis">Accessibility</h3>
+              <p>
+                Bring to the table some win-win strategies to ensure the proactive
+                domination.
+              </p>
+              <a href="#">
+                Learn more
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+  
+            <!-- Apps -->
+            <div class="feature col-md-3 col-sm-6">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-play-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-body-emphasis">Apps</h3>
+              <p>
+                Leverage the agile frameworks to provide a synopsis for the high
+                level overviews.
+              </p>
+              <a href="#">
+                Learn more
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+  
+            <!-- Workflow builder -->
+            <div class="feature col-md-3 col-sm-6">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-stack"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"
+                  />
+                  <path
+                    d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-body-emphasis">Workflow builder</h3>
+              <p>
+                User generated content in the real-time will have multiple
+                touchpoints for offshoring.
+              </p>
+              <a href="#">
+                Learn more
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+  
+            <!-- Searching -->
+            <div class="feature col-md-3 col-sm-6">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-body-emphasis">Searching</h3>
+              <p>
+                Organically grow the holistic world view of disruptive innovation
+                and amazing Concepts.
+              </p>
+              <a href="#">
+                Learn more
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Stats Section -->
-    <div class=" stats-section container-fluid bg-primary w-100">
-      <!-- Stats Container -->
-      <div class="stats-container">
-        <!-- Stats image -->
-        <div class="stats-image">
-          <img class="img-fluid" src="images/stats.jpg" alt="Stats image">
+  
+      <!-- Product Section -->
+      <div class="product-block">
+        <!-- Text above product -->
+        <section class="py-5 text-center container col-lg-8">
+          <div class="row py-lg-5">
+            <div class="col-lg-10 col-md-8 mx-auto">
+              <h1 class="fw-bold">Redefining Product Features</h1>
+              <p class="lead text-body-secondary text-center">
+                Keeping your eye on the ball while performing a deep dive on the
+                start-up mentality to derive convergence on cross-platform
+                integration.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <div class="container-fluid product-content">
+          <div class="row pictures-container">
+            <!-- Small Screen Picture -->
+            <div class="col-12 product-pic-small-screen">
+              <img src="images/product style 1.jpg" alt="" class="img-fluid" />
+            </div>
+  
+            <!-- Product Features -->
+            <div class="col-md-6 product-box">
+              <!-- Explore ideas together -->
+              <div class="feature col-10">
+                <div class="d-flex gap-3">
+                  <div class="feature-icon d-inline-flex fs-2 mb-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-send-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-body-emphasis text-start">
+                      Explore ideas together
+                    </h3>
+                    <p class="text-start">
+                      Engage audience segments and finally create actionable
+                      insights. Amplify vertical integration.
+                    </p>
+                    <a href="#">
+                      Learn more
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Bring those ideas to life -->
+              <div class="feature col-10">
+                <div class="d-flex gap-3">
+                  <div class="feature-icon d-inline-flex fs-2 mb-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-lightbulb-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-body-emphasis text-start">
+                      Bring those ideas to life
+                    </h3>
+                    <p class="text-start">
+                      Engage audience segments and finally create actionable
+                      insights. Amplify vertical integration.
+                    </p>
+                    <a href="#">
+                      Learn more
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Ship better outcomes -->
+              <div class="feature col-10">
+                <div class="d-flex gap-3">
+                  <div class="feature-icon d-inline-flex fs-2 mb-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-globe-asia-australia"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m10.495 6.92 1.278-.619a.483.483 0 0 0 .126-.782c-.252-.244-.682-.139-.932.107-.23.226-.513.373-.816.53l-.102.054c-.338.178-.264.626.1.736a.476.476 0 0 0 .346-.027ZM7.741 9.808V9.78a.413.413 0 1 1 .783.183l-.22.443a.602.602 0 0 1-.12.167l-.193.185a.36.36 0 1 1-.5-.516l.112-.108a.453.453 0 0 0 .138-.326ZM5.672 12.5l.482.233A.386.386 0 1 0 6.32 12h-.416a.702.702 0 0 1-.419-.139l-.277-.206a.302.302 0 1 0-.298.52l.761.325Z"
+                      />
+                      <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1.612 10.867l.756-1.288a1 1 0 0 1 1.545-.225l1.074 1.005a.986.986 0 0 0 1.36-.011l.038-.037a.882.882 0 0 0 .26-.755c-.075-.548.37-1.033.92-1.099.728-.086 1.587-.324 1.728-.957.086-.386-.114-.83-.361-1.2-.207-.312 0-.8.374-.8.123 0 .24-.055.318-.15l.393-.474c.196-.237.491-.368.797-.403.554-.064 1.407-.277 1.583-.973.098-.391-.192-.634-.484-.88-.254-.212-.51-.426-.515-.741a6.998 6.998 0 0 1 3.425 7.692 1.015 1.015 0 0 0-.087-.063l-.316-.204a1 1 0 0 0-.977-.06l-.169.082a1 1 0 0 1-.741.051l-1.021-.329A1 1 0 0 0 11.205 9h-.165a1 1 0 0 0-.945.674l-.172.499a1 1 0 0 1-.404.514l-.802.518a1 1 0 0 0-.458.84v.455a1 1 0 0 0 1 1h.257a1 1 0 0 1 .542.16l.762.49a.998.998 0 0 0 .283.126 7.001 7.001 0 0 1-9.49-3.409Z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-body-emphasis text-start">
+                      Ship better outcomes
+                    </h3>
+                    <p class="text-start">
+                      Engage audience segments and finally create actionable
+                      insights. Amplify vertical integration.
+                    </p>
+                    <a href="#">
+                      Learn more
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Large Screen Picture -->
+            <div class="col-6 product-pic-large-screen">
+              <img
+                src="images/product style 2.jpg"
+                alt=""
+                class="object-fit-fill img-fluid"
+              />
+            </div>
+          </div>
         </div>
-        <!-- Stats content -->
-        <div class="stats-content">
-          <div>
-            <h1>Demonstrate branding consequently think outside the box and beyond</h1>
-            <p>Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna vulputate pellentesque a diam tincidunt. Aenean malesuada tellus tellus faucibus mauris quisque mauris in.</p>
+      </div>
+  
+      <!-- Stats Section -->
+      <div class=" stats-section container-fluid bg-primary w-100">
+        <!-- Stats Container -->
+        <div class="stats-container">
+          <!-- Stats image -->
+          <div class="stats-image">
+            <img class="img-fluid" src="images/stats.jpg" alt="Stats image">
+          </div>
+          <!-- Stats content -->
+          <div class="stats-content">
             <div>
-              <div class="checked-line">
-                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
+              <h1>Demonstrate branding consequently think outside the box and beyond</h1>
+              <p>Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna vulputate pellentesque a diam tincidunt. Aenean malesuada tellus tellus faucibus mauris quisque mauris in.</p>
+              <div>
+                <div class="checked-line">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>
+                  <h6>Enterprise-grade security</h6>
+                </div>
+                <div class="checked-line">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>
+                  <h6>99.9% guaranteed uptime SLA</h6>
+                </div>
+                <div class="checked-line">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>
+                  <h6>Designated customer success team</h6>
+                </div>
+                <button class="btn btn-primary mt-4">Start Now <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Clients Section -->
+      <div class=" client-logos-section">
+        <!-- Text above client logos -->
+        <section class="py-5 text-center container col-lg-8">
+          <div class="row py-lg-5">
+            <div class="col-lg-10 col-md-8 mx-auto">
+              <h1 class="fw-bold">Proud to Be Used By</h1>
+              <p class="lead text-body-secondary text-center">
+                Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Client logos container -->
+        <div class="logos-box">
+          <div class="client-logos-container">
+  
+            <!-- Logos Row 1 -->
+            <div class="client-logos-row">
+              <div class="client-logo-large">
+                <img src="logos/Logo Glyphs (2).jpg" alt="">
+              </div>
+              <div class="client-logo-medium">
+                <img src="logos/Logo Glyphs.jpg" alt="">
+              </div>
+              <div class="client-logo-small">
+                <img src="logos/Gray basecamp.jpg" alt="">
+              </div>
+              <div class="client-logo-large">
+                <img src="logos/Logo Glyphs (3).jpg" alt="">
+              </div>
+              <div class="client-logo-medium">
+                <img src="logos/Logo Glyphs (6).jpg" alt="">
+              </div>
+              <div class="client-logo-small">
+                <img src="logos/Logo Glyphs (1).jpg" alt="">
+              </div>
+              <div class="client-logo-large">
+                <img src="logos/Logo Glyphs (12).jpg" alt="">
+              </div>
+              <div class="client-logo-small">
+                <img src="logos/Logo Glyphs (9).jpg" alt="">
+              </div>
+            </div>
+    
+            <!-- Logos Row 2 -->
+            <div class="client-logos-row">
+              <div class="client-logo-small">
+                <img src="logos/Logo Glyphs (18).jpg" alt="">
+              </div>
+              <div class="client-logo-medium">
+                <img src="logos/Logo Glyphs (4).jpg" alt="">
+              </div>
+              <div class="client-logo-small">
+                <img src="logos/Logo Glyphs (5).jpg" alt="">
+              </div>
+              <div class="client-logo-large">
+                <img src="logos/Logo Glyphs (7).jpg" alt="">
+              </div>
+              <div class="client-logo-medium">
+                <img src="logos/Logo Glyphs (17).jpg" alt="">
+              </div>
+              <div class="client-logo-small">
+                <img src="logos/Logo Glyphs (16).jpg" alt="">
+              </div>
+              <div class="client-logo-medium">
+                <img src="logos/Logo Glyphs (14).jpg" alt="">
+              </div>
+              <div class="client-logo-large">
+                <img src="logos/Logo Glyphs (10).jpg" alt="">
+              </div>
+            </div>
+    
+            <!-- Logos Row 3 -->
+            <div class="client-logos-row">
+              <div class="client-logo-large">
+                <img src="logos/Logo Glyphs (13).jpg" alt="">
+              </div>
+              <div class="client-logo-medium">
+                <img src="logos/Logo Glyphs (8).jpg" alt="">
+              </div>
+              
+              <div class="client-logo-large">
+                <img src="logos/Logo Glyphs (15).jpg" alt="">
+              </div>
+              <div class="client-logo-medium">
+                <img src="logos/Logo Glyphs (20).jpg" alt="">
+              </div>
+              <div class="client-logo-small">
+                <img src="logos/Logo Glyphs (18).jpg" alt="">
+              </div>
+              <div class="client-logo-large">
+                <img src="logos/Logo Glyphs (19).jpg" alt="">
+              </div>
+              <div class="client-logo-medium">
+                <img src="logos/Logo Glyphs (21).jpg" alt="">
+              </div>
+              <div class="client-logo-small">
+                <img src="logos/Gray basecamp.jpg" alt="">
+              </div>
+            </div>        
+          </div>
+        </div>
+        
+  
+          <!-- "Show more" link -->
+        <div class="show-more-link">
+          <a href="#">
+            Show more
+            <svg
+              class="arrow-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Pricing Section -->
+      <div class="pricing-section">
+        <!-- Text above pricing -->
+        <section class="py-5 text-center container col-lg-8">
+          <div class="row py-lg-5">
+            <div class="col-lg-10 col-md-8 mx-auto">
+              <h1 class="fw-bold">Pricing that Adapts to You</h1>
+              <p class="lead text-body-secondary text-center">
+                Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on integration. Collaboratively administrate markets via networks. 
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Pricing cards container -->
+        <div class="pricing-cards-container container-fluid">
+          <div class="row gap-5 px-3 justify-content-center">
+            <!-- Price cards -->
+  
+          <!-- Basic Plan -->
+            <div class="price-card col col-md-3 col-sm-5">
+            <!-- Price -->
+            <div class="price ">
+              <!-- Tile -->
+              <div class="tile">
+                <p>Basic</p>
+              </div>
+              <div class="package">
+                <h1>Basic</h1>
+                <h6>$39.9</h6>
+              </div>
+            </div>
+            <!-- Perks -->
+            <div class="perks">
+              <div class="perk-description">
+                <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
                   <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
                 </svg>
-                <h6>Enterprise-grade security</h6>
+                <p>Access to all features</p>
               </div>
-              <div class="checked-line">
-                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
+              <div class="perk-description">
+                <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
                   <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
                 </svg>
-                <h6>99.9% guaranteed uptime SLA</h6>
+                <p>5 watchlists included</p>
               </div>
-              <div class="checked-line">
-                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
-                  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              <div class="perk-description">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                 </svg>
-                <h6>Designated customer success team</h6>
+                <p>Exclusive premium widgets</p>
               </div>
-              <button class="btn btn-primary mt-4">Start Now <svg
+              <div class="perk-description">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                <p>Priority support</p>
+              </div>
+              <div class="perk-description">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                <p>Amplifying stakeholder</p>
+              </div>
+            </div>
+            <!-- Button -->
+            <div class="card-button">
+              <button>Try Now <svg
                 class="arrow-icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -807,203 +1026,59 @@
                 />
               </svg></button>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Clients Section -->
-    <div class=" client-logos-section">
-      <!-- Text above client logos -->
-      <section class="py-5 text-center container col-lg-8">
-        <div class="row py-lg-5">
-          <div class="col-lg-10 col-md-8 mx-auto">
-            <h1 class="fw-bold">Proud to Be Used By</h1>
-            <p class="lead text-body-secondary text-center">
-              Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Client logos container -->
-      <div class="logos-box">
-        <div class="client-logos-container">
-
-          <!-- Logos Row 1 -->
-          <div class="client-logos-row">
-            <div class="client-logo-large">
-              <img src="logos/Logo Glyphs (2).jpg" alt="">
             </div>
-            <div class="client-logo-medium">
-              <img src="logos/Logo Glyphs.jpg" alt="">
-            </div>
-            <div class="client-logo-small">
-              <img src="logos/Gray basecamp.jpg" alt="">
-            </div>
-            <div class="client-logo-large">
-              <img src="logos/Logo Glyphs (3).jpg" alt="">
-            </div>
-            <div class="client-logo-medium">
-              <img src="logos/Logo Glyphs (6).jpg" alt="">
-            </div>
-            <div class="client-logo-small">
-              <img src="logos/Logo Glyphs (1).jpg" alt="">
-            </div>
-            <div class="client-logo-large">
-              <img src="logos/Logo Glyphs (12).jpg" alt="">
-            </div>
-            <div class="client-logo-small">
-              <img src="logos/Logo Glyphs (9).jpg" alt="">
-            </div>
-          </div>
   
-          <!-- Logos Row 2 -->
-          <div class="client-logos-row">
-            <div class="client-logo-small">
-              <img src="logos/Logo Glyphs (18).jpg" alt="">
-            </div>
-            <div class="client-logo-medium">
-              <img src="logos/Logo Glyphs (4).jpg" alt="">
-            </div>
-            <div class="client-logo-small">
-              <img src="logos/Logo Glyphs (5).jpg" alt="">
-            </div>
-            <div class="client-logo-large">
-              <img src="logos/Logo Glyphs (7).jpg" alt="">
-            </div>
-            <div class="client-logo-medium">
-              <img src="logos/Logo Glyphs (17).jpg" alt="">
-            </div>
-            <div class="client-logo-small">
-              <img src="logos/Logo Glyphs (16).jpg" alt="">
-            </div>
-            <div class="client-logo-medium">
-              <img src="logos/Logo Glyphs (14).jpg" alt="">
-            </div>
-            <div class="client-logo-large">
-              <img src="logos/Logo Glyphs (10).jpg" alt="">
-            </div>
-          </div>
-  
-          <!-- Logos Row 3 -->
-          <div class="client-logos-row">
-            <div class="client-logo-large">
-              <img src="logos/Logo Glyphs (13).jpg" alt="">
-            </div>
-            <div class="client-logo-medium">
-              <img src="logos/Logo Glyphs (8).jpg" alt="">
-            </div>
-            
-            <div class="client-logo-large">
-              <img src="logos/Logo Glyphs (15).jpg" alt="">
-            </div>
-            <div class="client-logo-medium">
-              <img src="logos/Logo Glyphs (20).jpg" alt="">
-            </div>
-            <div class="client-logo-small">
-              <img src="logos/Logo Glyphs (18).jpg" alt="">
-            </div>
-            <div class="client-logo-large">
-              <img src="logos/Logo Glyphs (19).jpg" alt="">
-            </div>
-            <div class="client-logo-medium">
-              <img src="logos/Logo Glyphs (21).jpg" alt="">
-            </div>
-            <div class="client-logo-small">
-              <img src="logos/Gray basecamp.jpg" alt="">
-            </div>
-          </div>        
-        </div>
-      </div>
-      
-
-        <!-- "Show more" link -->
-      <div class="show-more-link">
-        <a href="#">
-          Show more
-          <svg
-            class="arrow-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-arrow-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-            />
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Pricing Section -->
-    <div class="pricing-section">
-      <!-- Text above pricing -->
-      <section class="py-5 text-center container col-lg-8">
-        <div class="row py-lg-5">
-          <div class="col-lg-10 col-md-8 mx-auto">
-            <h1 class="fw-bold">Pricing that Adapts to You</h1>
-            <p class="lead text-body-secondary text-center">
-              Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on integration. Collaboratively administrate markets via networks. 
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Pricing cards container -->
-      <div class="pricing-cards-container container-fluid">
-        <div class="row gap-5 px-3 justify-content-center">
-          <!-- Price cards -->
-
-        <!-- Basic Plan -->
-          <div class="price-card col col-md-3 col-sm-5">
+          <!-- Advanced Plan -->
+            <div class="price-card col-md-3 col-sm-5">
           <!-- Price -->
           <div class="price ">
             <!-- Tile -->
             <div class="tile">
-              <p>Basic</p>
+              <p>Advanced</p>
             </div>
             <div class="package">
-              <h1>Basic</h1>
-              <h6>$39.9</h6>
+              <h1>Advanced</h1>
+              <h6>$59.9</h6>
             </div>
           </div>
           <!-- Perks -->
           <div class="perks">
+  
             <div class="perk-description">
               <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
                 <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
               </svg>
               <p>Access to all features</p>
             </div>
+  
             <div class="perk-description">
               <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
                 <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
               </svg>
               <p>5 watchlists included</p>
             </div>
+  
             <div class="perk-description">
-              <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
               </svg>
               <p>Exclusive premium widgets</p>
             </div>
+  
             <div class="perk-description">
               <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
               </svg>
               <p>Priority support</p>
             </div>
+  
             <div class="perk-description">
               <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
               </svg>
               <p>Amplifying stakeholder</p>
             </div>
+  
           </div>
           <!-- Button -->
           <div class="card-button">
@@ -1021,59 +1096,57 @@
               />
             </svg></button>
           </div>
-          </div>
-
-        <!-- Advanced Plan -->
-          <div class="price-card col-md-3 col-sm-5">
+            </div>
+  
+          <!-- Elite Plan -->
+            <div class="price-card col-md-3 d-sm-none d-md-flex">
         <!-- Price -->
         <div class="price ">
           <!-- Tile -->
           <div class="tile">
-            <p>Advanced</p>
+            <p>Elite</p>
           </div>
           <div class="package">
-            <h1>Advanced</h1>
-            <h6>$59.9</h6>
+            <h1>Elite</h1>
+            <h6>$99.9</h6>
           </div>
         </div>
         <!-- Perks -->
         <div class="perks">
-
           <div class="perk-description">
             <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
               <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
             </svg>
             <p>Access to all features</p>
           </div>
-
+  
           <div class="perk-description">
             <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
               <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
             </svg>
             <p>5 watchlists included</p>
           </div>
-
+  
           <div class="perk-description">
             <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
               <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
             </svg>
             <p>Exclusive premium widgets</p>
           </div>
-
+  
           <div class="perk-description">
-            <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
             </svg>
             <p>Priority support</p>
           </div>
-
+  
           <div class="perk-description">
-            <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
             </svg>
             <p>Amplifying stakeholder</p>
           </div>
-
         </div>
         <!-- Button -->
         <div class="card-button">
@@ -1091,274 +1164,208 @@
             />
           </svg></button>
         </div>
-          </div>
-
-        <!-- Elite Plan -->
-          <div class="price-card col-md-3 d-sm-none d-md-flex">
-      <!-- Price -->
-      <div class="price ">
-        <!-- Tile -->
-        <div class="tile">
-          <p>Elite</p>
-        </div>
-        <div class="package">
-          <h1>Elite</h1>
-          <h6>$99.9</h6>
-        </div>
-      </div>
-      <!-- Perks -->
-      <div class="perks">
-        <div class="perk-description">
-          <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
-            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-          </svg>
-          <p>Access to all features</p>
-        </div>
-
-        <div class="perk-description">
-          <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
-            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-          </svg>
-          <p>5 watchlists included</p>
-        </div>
-
-        <div class="perk-description">
-          <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
-            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-          </svg>
-          <p>Exclusive premium widgets</p>
-        </div>
-
-        <div class="perk-description">
-          <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
-            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-          </svg>
-          <p>Priority support</p>
-        </div>
-
-        <div class="perk-description">
-          <svg class="tick" xmlns="http://www.w3.org/2000/svg" class="bi bi-check" viewBox="0 0 16 16">
-            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-          </svg>
-          <p>Amplifying stakeholder</p>
-        </div>
-      </div>
-      <!-- Button -->
-      <div class="card-button">
-        <button>Try Now <svg
-          class="arrow-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          class="bi bi-arrow-right"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-          />
-        </svg></button>
-      </div>
-          </div>
-        </div>
-
-        
-
-      </div>
-    </div>
-
-    <!-- Blog Section -->
-    <div class="blog-section">
-      <!-- Text above blogs -->
-      <section class="py-5 text-center container col-lg-8">
-        <div class="row py-lg-5">
-          <div class="col-lg-10 col-md-8 mx-auto">
-            <h1 class="fw-bold">Latest Blog Posts</h1>
-            <p class="lead text-body-secondary text-center">
-              Completely synergize resource taxing relationships via premier niche markets. Professionally  cultivate one-to-one customer service with robust ideas. 
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Blogs container -->
-      <div class="container-fluid blog-container">
-        <div class="row px-md-5">
-
-          <!-- Primary blog -->
-          <div class="primary-blog col-md-6 d-flex flex-column gap-3">
-            <div class="primary-blog-image w-100 h-100">
-              <img class="img-fluid w-100 h-100" src="images/primary blog image.jpg" alt="">
-            </div>
-            <div class="primary-blog-content d-flex flex-column gap-2">
-              <h1>Reach your users with new tools. Reach your users with new tools. Reach your users with new tools.</h1>
-              <h5>Efficiently unleash cross-media information without cross-media value. Quickly maximize.Efficiently unleash cross-media information without cross-media value. Quickly maximize.Efficiently unleash cross-media.</h5>
-              <h6>25 Apr 2022 </h6>
             </div>
           </div>
-
-
-          <!-- Secondary blogs container -->
-          <div class="secondary-blogs-container col-md-6 flex-column d-flex gap-3">
-
-            <!-- Secondary blog # 1 -->
-            <div class="secondary-blog container-fluid flex-column flex-sm-row d-flex gap-3">
-              <div class="secondary-blog-image col col-sm-4">
-                <img class="w-100 h-100" src="images/secondary blog image 1.jpg" alt="">
+  
+          
+  
+        </div>
+      </div>
+  
+      <!-- Blog Section -->
+      <div class="blog-section">
+        <!-- Text above blogs -->
+        <section class="py-5 text-center container col-lg-8">
+          <div class="row py-lg-5">
+            <div class="col-lg-10 col-md-8 mx-auto">
+              <h1 class="fw-bold">Latest Blog Posts</h1>
+              <p class="lead text-body-secondary text-center">
+                Completely synergize resource taxing relationships via premier niche markets. Professionally  cultivate one-to-one customer service with robust ideas. 
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Blogs container -->
+        <div class="container-fluid blog-container">
+          <div class="row px-md-5">
+  
+            <!-- Primary blog -->
+            <div class="primary-blog col-md-6 d-flex flex-column gap-3">
+              <div class="primary-blog-image w-100 h-100">
+                <img class="img-fluid w-100 h-100" src="images/primary blog image.jpg" alt="">
               </div>
-              <div class="secondary-blog-content col col-sm-8 d-flex flex-column gap-2">
-                <h1>Reach your users with new tools.</h1>
-                <h5>Efficiently unleash cross-media information without cross-media value. Quickly maximize.</h5>
+              <div class="primary-blog-content d-flex flex-column gap-2">
+                <h1>Reach your users with new tools. Reach your users with new tools. Reach your users with new tools.</h1>
+                <h5>Efficiently unleash cross-media information without cross-media value. Quickly maximize.Efficiently unleash cross-media information without cross-media value. Quickly maximize.Efficiently unleash cross-media.</h5>
                 <h6>25 Apr 2022 </h6>
               </div>
             </div>
-
-            <!-- Secondary blog # 2 -->
-            <div class="secondary-blog container-fluid flex-column flex-sm-row d-flex gap-3">
-              <div class="secondary-blog-image col col-sm-4">
-                <img class="w-100 h-100" src="images/secondary blog image 2.jpg" alt="">
+  
+  
+            <!-- Secondary blogs container -->
+            <div class="secondary-blogs-container col-md-6 flex-column d-flex gap-3">
+  
+              <!-- Secondary blog # 1 -->
+              <div class="secondary-blog container-fluid flex-column flex-sm-row d-flex gap-3">
+                <div class="secondary-blog-image col col-sm-4">
+                  <img class="w-100 h-100" src="images/secondary blog image 1.jpg" alt="">
+                </div>
+                <div class="secondary-blog-content col col-sm-8 d-flex flex-column gap-2">
+                  <h1>Reach your users with new tools.</h1>
+                  <h5>Efficiently unleash cross-media information without cross-media value. Quickly maximize.</h5>
+                  <h6>25 Apr 2022 </h6>
+                </div>
               </div>
-              <div class="secondary-blog-content col col-sm-8 d-flex flex-column gap-2">
-                <h1>Faster ways to reach your customer</h1>
-                <h5>Completely synergize resource taxing relationships via premier niche markets.</h5>
-                <h6>25 Apr 2022 </h6>
+  
+              <!-- Secondary blog # 2 -->
+              <div class="secondary-blog container-fluid flex-column flex-sm-row d-flex gap-3">
+                <div class="secondary-blog-image col col-sm-4">
+                  <img class="w-100 h-100" src="images/secondary blog image 2.jpg" alt="">
+                </div>
+                <div class="secondary-blog-content col col-sm-8 d-flex flex-column gap-2">
+                  <h1>Faster ways to reach your customer</h1>
+                  <h5>Completely synergize resource taxing relationships via premier niche markets.</h5>
+                  <h6>25 Apr 2022 </h6>
+                </div>
               </div>
-            </div>
-
-            <!-- Secondary blog # 3 -->
-            <div class="secondary-blog container-fluid flex-column flex-sm-row d-flex gap-3">
-              <div class="secondary-blog-image col col-sm-4">
-                <img class="w-100 h-100" src="images/secondary blog image 3.jpg" alt="">
+  
+              <!-- Secondary blog # 3 -->
+              <div class="secondary-blog container-fluid flex-column flex-sm-row d-flex gap-3">
+                <div class="secondary-blog-image col col-sm-4">
+                  <img class="w-100 h-100" src="images/secondary blog image 3.jpg" alt="">
+                </div>
+                <div class="secondary-blog-content col col-sm-8 d-flex flex-column gap-2">
+                  <h1>Revolutionizing the Design Industry</h1>
+                  <h5>Efficiently unleash cross-media information without cross-media value. Quickly maximize.</h5>
+                  <h6>25 Apr 2022 </h6>
+                </div>
               </div>
-              <div class="secondary-blog-content col col-sm-8 d-flex flex-column gap-2">
-                <h1>Revolutionizing the Design Industry</h1>
-                <h5>Efficiently unleash cross-media information without cross-media value. Quickly maximize.</h5>
-                <h6>25 Apr 2022 </h6>
-              </div>
+  
             </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Newsletter Section -->
-    <div class="newsletter-section container-fluid">
-      <div class="newsletter-container row">
-        <div class="newsletter-text col-md-6 d-flex flex-column g-5 justify-content-center align-items-center">
-          <h1>Welcome to your new digital reality that will rock your world.</h1>
-          <h6>Let us help you take you from zero to serious business and beyond.
-            Our no-strings attached free trial lets you test our product today.</h6>
-        </div>
-        <div class="col-md-6 d-flex flex-column flex-sm-row justify-content-center align-items-center">
-          <input class="col-12 col-sm-10 col-md-8 col-lg-6" type="text" placeholder="Enter your email">
-          <button class="col-12 col-sm-2 col-md-4 col-lg-2">Submit</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer  -->
-    <div class="footer">
-      <!-- Footer Content Container -->
-      <div class="footer-content container-fluid">
-
-        <!-- Footer Top -->
-        <div class="footer-top row d-flex justify-content-md-center">
-
-          <!-- Footer Shortcut Links -->
-
-          <div class="d-flex flex-column gap-3 col-6 col-sm-4 col-md-2 text-light mb-5">
-            <h5>Products</h5>
-            <div class="d-flex flex-column gap-2">
-              <h6>Features</h6>
-              <h6>Integrations</h6>
-              <h6>Enterprise</h6>
-              <h6>Solutions</h6>
-            </div>
-          </div>
-
-          <div class="d-flex flex-column gap-3 col-6 col-sm-4 col-md-2 text-light mb-5">
-            <h5>Products</h5>
-            <div class="d-flex flex-column gap-2">
-              <h6>Features</h6>
-              <h6>Integrations</h6>
-              <h6>Enterprise</h6>
-              <h6>Solutions</h6>
-            </div>
-          </div>
-
-          <div class="d-flex flex-column gap-3 col-6 col-sm-4 col-md-2 text-light mb-5">
-            <h5>Products</h5>
-            <div class="d-flex flex-column gap-2">
-              <h6>Features</h6>
-              <h6>Integrations</h6>
-              <h6>Enterprise</h6>
-              <h6>Solutions</h6>
-            </div>
-          </div>
-
-          <div class="d-flex flex-column gap-3 col-6 col-sm-4 col-md-2 text-light mb-5">
-            <h5>Resources</h5>
-            <div class="d-flex flex-column gap-2">
-              <h6>Partners</h6>
-              <h6>Developers</h6>
-              <h6>Community</h6>
-              <h6>Apps</h6>
-            </div>
-          </div>
-
-          <div class="d-flex flex-column gap-3 col-6 col-sm-4 col-md-2 text-light mb-5">
-            <h5>Company</h5>
-            <div class="d-flex flex-column gap-2">
-              <h6>About us</h6>
-              <h6>Leadership</h6>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom d-flex align-items-center justify-content-between flex-column flex-sm-row">
-
-          <!-- Footer Logo -->
-          <div class="footer-logo">
-            <img src="images/Company Logo.png" alt="">
-          </div>
-
-          <!-- Copyright Notice -->
-          <div class="copyright-notice">
-            <h4 class="text-center"> &copy; 2023 Lookscout. All Rights Reserved</h4>
-          </div>
-
-          <!-- Footer icons -->
-          <div class="footer-icons">
-            <div class="d-flex gap-4">
-
-              <!-- Facebook -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook" viewBox="0 0 16 16">
-                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-              </svg>
-
-              <!-- Google -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-google" viewBox="0 0 16 16">
-                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
-              </svg>
-
-              <!-- Apple -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-apple" viewBox="0 0 16 16">
-                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
-                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
-              </svg>
-
-              <!-- Instagram -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-instagram" viewBox="0 0 16 16">
-                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-              </svg>
-            </div>
+  
           </div>
         </div>
       </div>
-    </div>
-  </body>
+  
+      <!-- Newsletter Section -->
+      <div class="newsletter-section container-fluid">
+        <div class="newsletter-container row">
+          <div class="newsletter-text col-md-6 d-flex flex-column g-5 justify-content-center align-items-center">
+            <h1>Welcome to your new digital reality that will rock your world.</h1>
+            <h6>Let us help you take you from zero to serious business and beyond.
+              Our no-strings attached free trial lets you test our product today.</h6>
+          </div>
+          <div class="col-md-6 d-flex flex-column flex-sm-row justify-content-center align-items-center">
+            <input class="col-12 col-sm-10 col-md-8 col-lg-6" type="text" placeholder="Enter your email">
+            <button class="col-12 col-sm-2 col-md-4 col-lg-2">Submit</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Footer  -->
+      <div class="footer">
+        <!-- Footer Content Container -->
+        <div class="footer-content container-fluid">
+  
+          <!-- Footer Top -->
+          <div class="footer-top row d-flex justify-content-md-center">
+  
+            <!-- Footer Shortcut Links -->
+  
+            <div class="d-flex flex-column gap-3 col-6 col-sm-4 col-md-2 text-light mb-5">
+              <h5>Products</h5>
+              <div class="d-flex flex-column gap-2">
+                <h6>Features</h6>
+                <h6>Integrations</h6>
+                <h6>Enterprise</h6>
+                <h6>Solutions</h6>
+              </div>
+            </div>
+  
+            <div class="d-flex flex-column gap-3 col-6 col-sm-4 col-md-2 text-light mb-5">
+              <h5>Products</h5>
+              <div class="d-flex flex-column gap-2">
+                <h6>Features</h6>
+                <h6>Integrations</h6>
+                <h6>Enterprise</h6>
+                <h6>Solutions</h6>
+              </div>
+            </div>
+  
+            <div class="d-flex flex-column gap-3 col-6 col-sm-4 col-md-2 text-light mb-5">
+              <h5>Products</h5>
+              <div class="d-flex flex-column gap-2">
+                <h6>Features</h6>
+                <h6>Integrations</h6>
+                <h6>Enterprise</h6>
+                <h6>Solutions</h6>
+              </div>
+            </div>
+  
+            <div class="d-flex flex-column gap-3 col-6 col-sm-4 col-md-2 text-light mb-5">
+              <h5>Resources</h5>
+              <div class="d-flex flex-column gap-2">
+                <h6>Partners</h6>
+                <h6>Developers</h6>
+                <h6>Community</h6>
+                <h6>Apps</h6>
+              </div>
+            </div>
+  
+            <div class="d-flex flex-column gap-3 col-6 col-sm-4 col-md-2 text-light mb-5">
+              <h5>Company</h5>
+              <div class="d-flex flex-column gap-2">
+                <h6>About us</h6>
+                <h6>Leadership</h6>
+              </div>
+            </div>
+  
+          </div>
+  
+          <!-- Footer Bottom -->
+          <div class="footer-bottom d-flex align-items-center justify-content-between flex-column flex-sm-row">
+  
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+              <img src="images/Company Logo.png" alt="">
+            </div>
+  
+            <!-- Copyright Notice -->
+            <div class="copyright-notice">
+              <h4 class="text-center"> &copy; 2023 Lookscout. All Rights Reserved</h4>
+            </div>
+  
+            <!-- Footer icons -->
+            <div class="footer-icons">
+              <div class="d-flex gap-4">
+  
+                <!-- Facebook -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+  
+                <!-- Google -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-google" viewBox="0 0 16 16">
+                  <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                </svg>
+  
+                <!-- Apple -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-apple" viewBox="0 0 16 16">
+                  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                </svg>
+  
+                <!-- Instagram -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </div>
+  
 </html>

@@ -1,4 +1,10 @@
-/* Styles for hero */
+/* Styles to prevent zooming out beyond initial size */
+.body-container{
+    max-width: 2000px;
+    margin: auto;
+}
+
+/* Styles for hero section*/
 .hero {
     position: relative;
     /* height: 80vh; */
@@ -121,13 +127,6 @@
 
 
 
-
-
-
-
-
-
-
 /* Styles for Features Section */
 
 .features-section{
@@ -180,15 +179,7 @@ svg.arrow-icon{
 }
 
 
-
-
-
-
-
-
-
-
-/* Styles for product block */
+/* Styles for product section */
 
 .product-block{
     padding: 2.5% 5%;
@@ -233,7 +224,7 @@ svg.arrow-icon{
 }
 
 
-/* Styles for Stats Section */
+/* Styles for stats section */
 
 .stats-section{
     padding: 2.5% 5%;
@@ -246,7 +237,6 @@ svg.arrow-icon{
     justify-content: space-between;
     align-items: center;
     gap: 80px;
-    /* background-color: aquamarine; */
 }
 
 .stats-section h1{
